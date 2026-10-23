@@ -1,0 +1,24 @@
+{
+  "default": "诺艾尔",
+  "idle_unload_sec": 600,
+  "voices": {
+    "诺艾尔": {
+      "label": "诺艾尔",
+      "gpt": "GPT_weights_v2ProPlus/诺艾尔-e15.ckpt",
+      "sovits": "GPT_weights_v2Pro/诺艾尔_e24_s336.pth",
+      "ref_audio": "refs/诺艾尔.wav",
+      "prompt_text": "每当我心烦意乱的时候，听见风声就能平静下来",
+      "prompt_lang": "zh",
+      "text_lang": "zh"
+    },
+    "爱莉希雅": {
+      "label": "爱莉希雅",
+      "gpt": "GPT_weights_v2ProPlus/爱莉希雅LV2-e10.ckpt",
+      "sovits": "SoVITS_weights_v2ProPlus/爱莉希雅LV2_e100_s17000.pth",
+      "ref_audio": "refs/爱莉希雅.wav",
+      "prompt_text": "嗨，想我了吗？不论何时何地，爱莉希雅都会回应你的期待",
+      "prompt_lang": "zh",
+      "text_lang": "zh"
+    }
+  }
+}

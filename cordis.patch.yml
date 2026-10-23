@@ -1,0 +1,21 @@
+# GPT-SoVITS TTS for DSH：让 DSH 用本地音色朗读回答。
+# 引擎（运行时 + 底模 + 两个内置音色）由插件在首次使用时下载，路径不用手填；
+# 想用自己已有的整合包，可在右侧边栏「语音模型」面板里点「用已有目录」。
+- insert:
+    - id: gptsovits-tts
+      name: 'dsh-gptsovits-tts'
+      config:
+        enabled: true
+        baseURL: 'http://127.0.0.1:9866'
+        voice: 'auto'
+        speed: 1
+        autoSpeak: true
+        debounceMs: 350
+        minChars: 2
+        maxChars: 4000
+        skipSubagents: true
+        interruptOnUser: true
+        autoStart: true
+        autoDownload: true
+        engineDir: ''
+        downloadBase: ''
