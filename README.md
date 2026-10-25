@@ -1,6 +1,6 @@
 # dsh-gptsovits-tts
 
-**让你的 DSH 用自己的声音说话。** 基于开源 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) V2ProPlus，推理全部在本机 GPU 完成，不联网、不上传任何音频。
+**让你的 DSH 用自己的声音说话。** 这个插件本身不含任何模型代码，语音合成的能力全部来自开源项目 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)（作者 **花儿不哭 / RVC-Boss**），用的是它的 V2ProPlus 版本。推理全部在本机 GPU 完成，不联网、不上传任何音频。
 
 - 🔊 **朗读**：DSH 回复自动朗读，每条消息底部有「▶ 朗读 / ⏸ 暂停」按钮
 - 🎭 **换音色**：右侧边栏「语音模型」面板，卡片点一下即切换（约 1 秒），可试听、编辑、移除
@@ -10,6 +10,16 @@
 
 ---
 
+## 致谢
+
+这个插件能说话，99% 的功劳不是我的：
+
+- **[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)** —— 作者 **花儿不哭**（GitHub: [RVC-Boss](https://github.com/RVC-Boss)）。语音合成、音色克隆、一键训练的全部能力都来自这个开源项目，连运行时用的也是它官方整合包里的环境。本项目做的是把它包成 DSH 插件：朗读、侧边栏面板、引擎自动安装这些外围工作。
+- 以及 GPT-SoVITS 站在其肩膀上的那些工作：SoVITS / VITS、HuBERT、chinese-roberta-wwm-ext-large、BigVGAN、eres2net 说话人向量、FunASR 语音识别、UVR5 人声分离等。
+
+觉得这个插件的音色好听、训练顺手的话，请去给 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) 点个 Star —— 那才是这份能力的来源。
+
+---
 ## 安装
 
 ```powershell
